@@ -1,0 +1,6 @@
+{
+  "github":{
+    "tokens": ["ghp_xxxxx", "ghp_xxxx"],
+    "graphql": "https://api.github.com/graphql"
+  }
+}

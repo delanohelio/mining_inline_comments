@@ -1,0 +1,38 @@
+{
+  search(query: "repo:f{repository_fullname} is:pr created:f{created}", type: ISSUE, last: 100, f{after}) {
+   issueCount
+   f{meta.pageInfo}
+   nodes {
+     ... on PullRequest {
+        id
+         number
+         title
+         createdAt
+         url
+         merged
+         comments {
+           totalCount
+         }
+         reviews {
+           totalCount
+         }
+         reviewRequests {
+           totalCount
+         }
+         timelineItems(first: 100, itemTypes: PULL_REQUEST_REVIEW) {
+           totalCount
+           f{meta.pageInfo}
+           nodes {
+             ... on PullRequestReview {
+               comments {
+                 totalCount
+               }
+             }
+           }
+         }
+
+      }
+    }
+  }
+  f{meta.rateLimit}
+}

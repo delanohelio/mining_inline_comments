@@ -1,0 +1,150 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0MzU4NzU1Mjk5",
+        "number": 10489,
+        "title": "[BEAM-5605] Ensure that split calls are routed to the active bundle processor for the bundle id.",
+        "bodyText": "Maintain a mapping from bundle id to active bundle processor.\n\nThank you for your contribution! Follow this checklist to help us incorporate your contribution quickly and easily:\n\n Choose reviewer(s) and mention them in a comment (R: @username).\n Format the pull request title like [BEAM-XXX] Fixes bug in ApproximateQuantiles, where you replace BEAM-XXX with the appropriate JIRA issue, if applicable. This will automatically link the pull request to the issue.\n If this contribution is large, please file an Apache Individual Contributor License Agreement.\n\nSee the Contributor Guide for more tips on how to make review process smoother.\nPost-Commit Tests Status (on master branch)\n\n\n\nLang\nSDK\nApex\nDataflow\nFlink\nGearpump\nSamza\nSpark\n\n\n\n\nGo\n\n---\n---\n\n---\n---\n\n\n\nJava\n\n\n\n\n\n\n\n\n\nPython\n\n---\n\n\n---\n---\n\n\n\nXLang\n---\n---\n---\n\n---\n---\n---\n\n\n\nPre-Commit Tests Status (on master branch)\n\n\n\n---\nJava\nPython\nGo\nWebsite\n\n\n\n\nNon-portable\n\n\n\n\n\n\nPortable\n---\n\n---\n---\n\n\n\nSee .test-infra/jenkins/README for trigger phrase, status and link of all Jenkins jobs.",
+        "createdAt": "2020-01-02T18:47:16Z",
+        "url": "https://github.com/apache/beam/pull/10489",
+        "merged": true,
+        "mergeCommit": {
+          "oid": "0851849dcfe9b8088d69a5bdd3b55f7806b83ea9"
+        },
+        "closed": true,
+        "closedAt": "2020-01-03T01:48:27Z",
+        "author": {
+          "login": "lukecwik"
+        },
+        "timelineItems": {
+          "totalCount": 5,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpPPAAABb2eURYAH2gAyMzU4NzU1Mjk5OjMxN2JhOGM0NDBiODMwNGZlNDk1OWM1ZGQ1MWY1YzU4ODFhNjkyNmM=",
+            "endCursor": "Y3Vyc29yOnYyOpPPAAABb2hDt5AH2gAyMzU4NzU1Mjk5OjczOWNhZTE2M2U1YzA0YmFmNWRkNDU4ZjMwMzhhZDllNDEzMzM5NzQ=",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "317ba8c440b8304fe4959c5dd51f5c5881a6926c",
+                "author": {
+                  "user": {
+                    "login": "lukecwik",
+                    "name": "Lukasz Cwik"
+                  }
+                },
+                "url": "https://github.com/apache/beam/commit/317ba8c440b8304fe4959c5dd51f5c5881a6926c",
+                "committedDate": "2020-01-02T18:46:08Z",
+                "message": "[BEAM-5605] Ensure that split calls are routed to the active bundle processor for the bundle id.\n\nMaintain a mapping from bundle id to active bundle processor."
+              }
+            },
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14",
+                "author": {
+                  "user": {
+                    "login": "lukecwik",
+                    "name": "Lukasz Cwik"
+                  }
+                },
+                "url": "https://github.com/apache/beam/commit/114ce0ebdf48b0d15d1e6b330f46dcfec1941b14",
+                "committedDate": "2020-01-02T19:03:09Z",
+                "message": "fix test, clarify comments"
+              }
+            },
+            {
+              "__typename": "HeadRefForcePushedEvent",
+              "beforeCommit": {
+                "oid": "e5d38fe61eed5eaad1cffa0cc0186bf69eab5c3c",
+                "author": {
+                  "user": {
+                    "login": "lukecwik",
+                    "name": "Lukasz Cwik"
+                  }
+                },
+                "url": "https://github.com/apache/beam/commit/e5d38fe61eed5eaad1cffa0cc0186bf69eab5c3c",
+                "committedDate": "2020-01-02T19:01:50Z",
+                "message": "fix test, clarify comments"
+              },
+              "afterCommit": {
+                "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14",
+                "author": {
+                  "user": {
+                    "login": "lukecwik",
+                    "name": "Lukasz Cwik"
+                  }
+                },
+                "url": "https://github.com/apache/beam/commit/114ce0ebdf48b0d15d1e6b330f46dcfec1941b14",
+                "committedDate": "2020-01-02T19:03:09Z",
+                "message": "fix test, clarify comments"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM3ODA4NDI2",
+              "url": "https://github.com/apache/beam/pull/10489#pullrequestreview-337808426",
+              "createdAt": "2020-01-02T19:08:59Z",
+              "commit": {
+                "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14"
+              },
+              "state": "APPROVED",
+              "comments": {
+                "totalCount": 1,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxOTowODo1OVrOFZyzhw==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxOTowODo1OVrOFZyzhw==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjU5MTExMQ==",
+                    "bodyText": "Could you please also update the comments of ProcessBundleHandler, given that the handler is no longer processing bundle only.",
+                    "url": "https://github.com/apache/beam/pull/10489#discussion_r362591111",
+                    "createdAt": "2020-01-02T19:08:59Z",
+                    "author": {
+                      "login": "boyuanzz"
+                    },
+                    "path": "sdks/java/harness/src/main/java/org/apache/beam/fn/harness/control/ProcessBundleHandler.java",
+                    "diffHunk": "@@ -294,6 +296,19 @@ private void createRunnerAndConsumersForPTransformRecursively(\n     return BeamFnApi.InstructionResponse.newBuilder().setProcessBundle(response);\n   }\n \n+  /** Splits an active bundle. */",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14"
+                    },
+                    "originalPosition": 34
+                  }
+                ]
+              }
+            },
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "739cae163e5c04baf5dd458f3038ad9e41333974",
+                "author": {
+                  "user": {
+                    "login": "lukecwik",
+                    "name": "Lukasz Cwik"
+                  }
+                },
+                "url": "https://github.com/apache/beam/commit/739cae163e5c04baf5dd458f3038ad9e41333974",
+                "committedDate": "2020-01-02T21:57:46Z",
+                "message": "Address comments"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 3869,
+      "cost": 1,
+      "resetAt": "2021-10-28T17:48:14Z"
+    }
+  }
+}

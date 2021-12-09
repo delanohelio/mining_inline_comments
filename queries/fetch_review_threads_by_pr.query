@@ -1,0 +1,42 @@
+{
+  repository(owner:"f{owner}", name:"f{name}") {
+    pullRequest(number:f{pr_number}) {
+        id
+        number
+        reviewThreads (first:100, f{after}) {
+            totalCount
+            f{meta.pageInfo}
+            nodes{
+              id
+              diffSide
+              path
+              isResolved
+              comments (first:100) {
+                totalCount
+                f{meta.pageInfo}
+                nodes{
+                  id
+                  bodyText
+                  url
+                  createdAt
+                  author {
+                    login
+                  }
+                  path
+                  diffHunk
+                  state
+                  replyTo{
+                    id
+                  }
+                  originalCommit{
+                    oid
+                  }
+                  originalPosition
+                }
+              }
+            }
+        }
+      }
+    }
+    f{meta.rateLimit}
+  }

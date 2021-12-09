@@ -1,0 +1,103 @@
+{
+  repository(owner:"f{owner}", name:"f{name}") {
+    pullRequest(number:f{pr_number}) {
+        id
+        number
+        title
+        bodyText
+        createdAt
+        url
+        merged
+        mergeCommit {
+          oid
+        }
+        closed
+        closedAt
+        author {
+          login
+        }
+        timelineItems(first: 100, itemTypes: [PULL_REQUEST_COMMIT, PULL_REQUEST_REVIEW, HEAD_REF_FORCE_PUSHED_EVENT], f{after}) {
+          totalCount
+          f{meta.pageInfo}
+          nodes {
+            __typename
+            ... on PullRequestCommit {
+              commit{
+                oid
+                author{
+                  user{
+                    login
+                    name
+                  }
+                }
+                url
+                committedDate
+                message
+              }
+            }
+            ... on HeadRefForcePushedEvent {
+              beforeCommit{
+                oid
+                author{
+                  user{
+                    login
+                    name
+                  }
+                }
+                url
+                committedDate
+                message
+              }
+              afterCommit{
+                oid
+                author{
+                  user{
+                    login
+                    name
+                  }
+                }
+                url
+                committedDate
+                message
+              }
+            }
+            ... on PullRequestReview {
+              id
+              url
+              createdAt
+              commit {
+                oid
+              }
+              state
+              comments(first:100) {
+                totalCount
+                f{meta.pageInfo}
+                nodes{
+                  id
+                  body
+                  bodyText
+                  bodyHTML
+                  url
+                  createdAt
+                  author {
+                    login
+                  }
+                  path
+                  diffHunk
+                  state
+                  replyTo{
+                    id
+                  }
+                  originalCommit{
+                    oid
+                  }
+                  originalPosition
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    f{meta.rateLimit}
+  }

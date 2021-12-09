@@ -1,0 +1,6 @@
+{
+    "meta": {
+        "pageInfo": "pageInfo{\n startCursor\n endCursor\n hasNextPage\n hasPreviousPage\n}",
+        "rateLimit": "rateLimit{\n limit\n remaining\n cost\n resetAt\n}"
+    }
+}

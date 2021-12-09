@@ -1,0 +1,80 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0MzU4NzU1Mjk5",
+        "number": 10489,
+        "reviewThreads": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxOTowODo1OVrODVhXWA==",
+            "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxOTowODo1OVrODVhXWA==",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "id": "MDIzOlB1bGxSZXF1ZXN0UmV2aWV3VGhyZWFkMjIzODkzMzM2OnYy",
+              "diffSide": "RIGHT",
+              "path": "sdks/java/harness/src/main/java/org/apache/beam/fn/harness/control/ProcessBundleHandler.java",
+              "isResolved": false,
+              "comments": {
+                "totalCount": 2,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxOTowODo1OVrOFZyzhw==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQyMTo1OTowOVrOFZ2KCQ==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjU5MTExMQ==",
+                    "bodyText": "Could you please also update the comments of ProcessBundleHandler, given that the handler is no longer processing bundle only.",
+                    "url": "https://github.com/apache/beam/pull/10489#discussion_r362591111",
+                    "createdAt": "2020-01-02T19:08:59Z",
+                    "author": {
+                      "login": "boyuanzz"
+                    },
+                    "path": "sdks/java/harness/src/main/java/org/apache/beam/fn/harness/control/ProcessBundleHandler.java",
+                    "diffHunk": "@@ -294,6 +296,19 @@ private void createRunnerAndConsumersForPTransformRecursively(\n     return BeamFnApi.InstructionResponse.newBuilder().setProcessBundle(response);\n   }\n \n+  /** Splits an active bundle. */",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14"
+                    },
+                    "originalPosition": 34
+                  },
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjY0NjAyNQ==",
+                    "bodyText": "Done",
+                    "url": "https://github.com/apache/beam/pull/10489#discussion_r362646025",
+                    "createdAt": "2020-01-02T21:59:09Z",
+                    "author": {
+                      "login": "lukecwik"
+                    },
+                    "path": "sdks/java/harness/src/main/java/org/apache/beam/fn/harness/control/ProcessBundleHandler.java",
+                    "diffHunk": "@@ -294,6 +296,19 @@ private void createRunnerAndConsumersForPTransformRecursively(\n     return BeamFnApi.InstructionResponse.newBuilder().setProcessBundle(response);\n   }\n \n+  /** Splits an active bundle. */",
+                    "state": "SUBMITTED",
+                    "replyTo": {
+                      "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjU5MTExMQ=="
+                    },
+                    "originalCommit": {
+                      "oid": "114ce0ebdf48b0d15d1e6b330f46dcfec1941b14"
+                    },
+                    "originalPosition": 34
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 2379,
+      "cost": 1,
+      "resetAt": "2021-11-12T09:44:50Z"
+    }
+  }
+}

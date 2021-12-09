@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understandability Improvement</title>
+  <!-- Make sure to load the highlight.js CSS file before the Diff2Html CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css"/>
+  <link rel="stylesheet" type="text/css" href="markdown.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    function getAllUrlParams(url) {
+      // get query string from url (optional) or window
+      var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+
+      // we'll store the parameters here
+      var obj = {};
+
+      // if query string exists
+      if (queryString) {
+
+        // stuff after # is not part of query string, so get rid of it
+        queryString = queryString.split('#')[0];
+
+        // split our query string into its component parts
+        var arr = queryString.split('&');
+
+        for (var i = 0; i < arr.length; i++) {
+          // separate the keys and the values
+          var a = arr[i].split('=');
+
+          // set parameter name and value (use 'true' if empty)
+          var paramName = a[0];
+          var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
+
+          // (optional) keep case consistent
+          //paramName = paramName.toLowerCase();
+          if (typeof paramValue === 'string') paramValue = paramValue;
+
+          // if the paramName ends with square brackets, e.g. colors[] or colors[2]
+          if (paramName.match(/\[(\d+)?\]$/)) {
+
+            // create key if it doesn't exist
+            var key = paramName.replace(/\[(\d+)?\]/, '');
+            if (!obj[key]) obj[key] = [];
+
+            // if it's an indexed array e.g. colors[2]
+            if (paramName.match(/\[\d+\]$/)) {
+              // get the index value and add the entry at the appropriate position
+              var index = /\[(\d+)\]/.exec(paramName)[1];
+              obj[key][index] = paramValue;
+            } else {
+              // otherwise add the value to the end of the array
+              obj[key].push(paramValue);
+            }
+          } else {
+            // we're dealing with a string
+            if (!obj[paramName]) {
+              // if it doesn't exist, create property
+              obj[paramName] = paramValue;
+            } else if (obj[paramName] && typeof obj[paramName] === 'string') {
+              // if property does exist and it's a string, convert it to an array
+              obj[paramName] = [obj[paramName]];
+              obj[paramName].push(paramValue);
+            } else {
+              // otherwise add the property
+              obj[paramName].push(paramValue);
+            }
+          }
+        }
+      }
+      return obj;
+    }
+
+    function createDiffString(changed_code) {
+      return changed_code[0]["header"] + "\n" + changed_code.map(code_change => code_change.chunk).join("\n")
+    }
+
+    function createDiff(path, chunk) {
+      let diff = `--- a/${path}\n`
+      diff += `+++ b/${path}\n`
+      diff += chunk
+      return diff;
+    }
+
+    function mergeObjectWithArrays(obj1, obj2) {
+      for (let key in obj2) {
+        if (key in obj1) {
+          obj1[key] = [...obj1[key], ...obj2[key]]
+        }else{
+          obj1[key] = obj2[key]
+        }
+      }
+      return obj1
+    }
+
+
+    function createChangedCodeMap(revised_code) {
+      let changed_code_map = {}
+      const revised_code_commit = revised_code.commit
+      const changed_code = revised_code.changed_code
+      changed_code_map[revised_code_commit] = changed_code.map(({header, chunk}) => ({header, chunk}))
+
+      for (let index in changed_code) {
+        const changed_code_chunk = changed_code[index];
+        if (changed_code_chunk.next_change) {
+          changed_code_map = mergeObjectWithArrays(changed_code_map, createChangedCodeMap(changed_code_chunk.next_change))
+        }
+      }
+      return changed_code_map;
+    }
+  </script>
+</head>
+<body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = getAllUrlParams();
+    console.log(params);
+    $.getJSON(params.json, function (pr_data) {
+      console.log(pr_data);
+      const inline_comment = pr_data.timeline.find(item => item["id"] === (params.inline + "=="))
+
+      let comments = [inline_comment]
+      if (inline_comment["replies"]) {
+        comments = [inline_comment].concat(inline_comment["replies"]);
+      }
+      const comments_text = comments.map(comment => `**${comment.author}**: ${comment.bodyText}`).join("\n\n")
+      console.log(comments_text)
+
+
+      const repository_name = pr_data["pr_url"].split("/").slice(3, 5).join("/");
+      const pr_number = pr_data["pr_number"];
+      const pr_title = pr_data["pr_title"];
+
+      commit_url_factory = commit => `https://github.com/${repository_name}/commit/${commit}`;
+
+
+      let inlineReviewInfo = `## ${repository_name} - PR ${pr_number}\n`;
+      inlineReviewInfo += `**Title**: ${pr_title}\n`;
+      inlineReviewInfo += `### Code Review\n`;
+      inlineReviewInfo += `Inline Review ID - [${inline_comment.id}](${inline_comment.url})\n\n`;
+      inlineReviewInfo += `Original Commit - [${inline_comment.originalCommit}](${commit_url_factory(inline_comment.originalCommit)})\n\n`;
+      //inlineReviewInfo += `<pre><code>${inline_comment.path}\n\n${inline_comment.diffHunk}</code></pre>\n`
+      inlineReviewInfo += `<div id="chunk" class="blockCode"></div>\n\n`
+      inlineReviewInfo += comments_text.split("\n").map(comment_line => `> ${comment_line.replace(/\s\s+/g, ' ')}`).join("\n")
+      inlineReviewInfo += "\n\n"
+
+      document.getElementById('inlineReviewInfo').innerHTML = marked.parse(inlineReviewInfo)
+      document.getElementById('chunk').innerHTML = Diff2Html.html(createDiff(inline_comment.path, inline_comment.diffHunk), params);
+
+
+      let code_changes = {}
+      let changesAfterReview = "### Changes after review\n"
+      if (inline_comment["revised_code"]) {
+        code_changes = createChangedCodeMap(inline_comment.revised_code)
+
+        for (let revised_code_commit in code_changes){
+          changesAfterReview += `Commit - [${revised_code_commit}](${commit_url_factory(revised_code_commit)})`
+          changesAfterReview += `<div id="changes_${revised_code_commit}"></div>`
+        }
+      }else{
+        changesAfterReview += "Not Found"
+      }
+
+      //document.getElementById('changesAfterReview').innerHTML = marked.parse(changesAfterReview)
+
+      //for (let commit in code_changes) {
+        //document.getElementById(`changes_${commit}`).innerHTML = Diff2Html.html(createDiffString(code_changes[commit]), params);
+      //}
+
+    });
+  });
+</script>
+<div id="inlineReviewInfo"></div>
+<div id="changesAfterReview" hidden></div>
+</body>
+</html>
