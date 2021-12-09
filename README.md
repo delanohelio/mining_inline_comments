@@ -1,4 +1,4 @@
-# Miner Code Inline Comments Script
+# Mining Code Inline Comments Script
 
 It is a script to mine inline comments and aggregate data from GitHub.
 The script run in steps that need to be started one by one. These are the steps:
