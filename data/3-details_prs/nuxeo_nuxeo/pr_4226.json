@@ -1,0 +1,305 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0NDU2MjU4MzI2",
+        "number": 4226,
+        "title": "NXP-29389: Don't crash when deserializing a non valid date regarding DST",
+        "bodyText": "The DateTime class from Joda throws an exception when deserializing a datetime having a time in the DST gap. This means that a datetime between 2h and 3h the DST day is invalid, you can have 1h59 or 3h01 but not 2h35, because this day at 2h it is 3h.\nT&P: https://qa2.nuxeo.org/jenkins/job/TestAndPush/job/ondemand-testandpush-troger-10.10/66/",
+        "createdAt": "2020-07-24T12:25:49Z",
+        "url": "https://github.com/nuxeo/nuxeo/pull/4226",
+        "merged": true,
+        "mergeCommit": {
+          "oid": "dd65c26975229fcfe1dbab558b42ffa63a82cc91"
+        },
+        "closed": true,
+        "closedAt": "2020-08-07T08:40:01Z",
+        "author": {
+          "login": "kevinleturc"
+        },
+        "timelineItems": {
+          "totalCount": 11,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpPPAAABc4DVBVgFqTQ1NDg0OTIyNg==",
+            "endCursor": "Y3Vyc29yOnYyOpPPAAABc8Uec3AFqTQ2Mjc5MDM5Ng==",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0ODQ5MjI2",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454849226",
+              "createdAt": "2020-07-24T12:34:04Z",
+              "commit": {
+                "oid": "6071a71a5a03bd1a8a458cca365108e32c3d4f44"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 1,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNy0yNFQxMjozNDowNVrOG2tpLg==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNy0yNFQxMjozNDowNVrOG2tpLg==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDQ2MDAyNDExMA==",
+                    "bodyText": "timeZone.toTimeZone() in a var?",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/4226#discussion_r460024110",
+                    "createdAt": "2020-07-24T12:34:05Z",
+                    "author": {
+                      "login": "ataillefer"
+                    },
+                    "path": "addons-core/nuxeo-core-storage-marklogic/src/main/java/org/nuxeo/ecm/core/storage/marklogic/MarkLogicHelper.java",
+                    "diffHunk": "@@ -47,13 +49,23 @@\n     public static final String SCHEMA_MARKLOGIC_DELIMITER = \"__\";\n \n     public static String serializeCalendar(Calendar cal) {\n-        return DateTime.now().withMillis(cal.getTimeInMillis()).toString(DATE_TIME_FORMATTER);\n+        return serializeCalendar(cal, DateTimeZone.getDefault());\n+    }\n+\n+    // exists for tests\n+    protected static String serializeCalendar(Calendar cal, DateTimeZone timeZone) {\n+        return DateTime.now().withMillis(cal.getTimeInMillis()).toString(DATE_TIME_FORMATTER.withZone(timeZone));\n     }\n \n     public static Calendar deserializeCalendar(String calString) {\n-        DateTime dateTime = DATE_TIME_FORMATTER.parseDateTime(calString);\n-        Calendar cal = Calendar.getInstance();\n-        cal.setTime(dateTime.toDate());\n+        return deserializeCalendar(calString, DateTimeZone.getDefault());\n+    }\n+\n+    // exists for tests\n+    protected static Calendar deserializeCalendar(String calString, DateTimeZone timeZone) {\n+        LocalDateTime dateTime = DATE_TIME_FORMATTER.parseLocalDateTime(calString);\n+        Calendar cal = Calendar.getInstance(timeZone.toTimeZone());\n+        cal.setTime(dateTime.toDate(timeZone.toTimeZone()));",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "6071a71a5a03bd1a8a458cca365108e32c3d4f44"
+                    },
+                    "originalPosition": 33
+                  }
+                ]
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0ODYyOTg1",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454862985",
+              "createdAt": "2020-07-24T12:56:07Z",
+              "commit": {
+                "oid": "6071a71a5a03bd1a8a458cca365108e32c3d4f44"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 1,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNy0yNFQxMjo1NjowN1rOG2uTHg==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNy0yNFQxMjo1NjowN1rOG2uTHg==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDQ2MDAzNDg0Ng==",
+                    "bodyText": "Static imports for all the Calendar. constants and DateTimeZone.UTC maybe?",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/4226#discussion_r460034846",
+                    "createdAt": "2020-07-24T12:56:07Z",
+                    "author": {
+                      "login": "efge"
+                    },
+                    "path": "addons-core/nuxeo-core-storage-marklogic/src/test/java/org/nuxeo/ecm/core/storage/marklogic/TestMarkLogicHelper.java",
+                    "diffHunk": "@@ -0,0 +1,149 @@\n+/*\n+ * (C) Copyright 2020 Nuxeo (http://nuxeo.com/) and others.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ *\n+ * Contributors:\n+ *     Kevin Leturc\n+ */\n+package org.nuxeo.ecm.core.storage.marklogic;\n+\n+import static org.junit.Assert.assertEquals;\n+\n+import java.util.Calendar;\n+\n+import org.joda.time.DateTimeZone;\n+import org.junit.Test;\n+\n+/**\n+ * @since 10.10-HF\n+ */\n+public class TestMarkLogicHelper {\n+\n+    private static final DateTimeZone EUROPE_PARIS = DateTimeZone.forID(\"Europe/Paris\");\n+\n+    @Test\n+    public void testSerializeCalendar() {\n+        Calendar calendar = Calendar.getInstance();\n+        calendar.set(2020, Calendar.JULY, 24, 12, 59, 34);\n+        calendar.set(Calendar.MILLISECOND, 459);\n+\n+        String calendarString = MarkLogicHelper.serializeCalendar(calendar);\n+        assertEquals(\"2020-07-24T12:59:34.459\", calendarString);\n+    }\n+\n+    @Test\n+    public void testSerializeCalendarUTC() {\n+        Calendar calendar = Calendar.getInstance(DateTimeZone.UTC.toTimeZone());\n+        calendar.set(2020, Calendar.JULY, 24, 12, 59, 34);\n+        calendar.set(Calendar.MILLISECOND, 459);",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "6071a71a5a03bd1a8a458cca365108e32c3d4f44"
+                    },
+                    "originalPosition": 49
+                  }
+                ]
+              }
+            },
+            {
+              "__typename": "HeadRefForcePushedEvent",
+              "beforeCommit": {
+                "oid": "6071a71a5a03bd1a8a458cca365108e32c3d4f44",
+                "author": {
+                  "user": {
+                    "login": "kevinleturc",
+                    "name": "Kevin Leturc"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/6071a71a5a03bd1a8a458cca365108e32c3d4f44",
+                "committedDate": "2020-07-24T12:19:23Z",
+                "message": "NXP-29389: Don't crash when deserializing a non valid date regarding DST"
+              },
+              "afterCommit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37",
+                "author": {
+                  "user": {
+                    "login": "kevinleturc",
+                    "name": "Kevin Leturc"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/12e946244bbc7053ccab6d71c44927d9d64b8e37",
+                "committedDate": "2020-07-24T13:17:04Z",
+                "message": "NXP-29389: Don't crash when deserializing a non valid date regarding DST"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0ODc5MzA5",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454879309",
+              "createdAt": "2020-07-24T13:20:11Z",
+              "commit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0ODgyMDIw",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454882020",
+              "createdAt": "2020-07-24T13:23:47Z",
+              "commit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0ODg0MTkx",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454884191",
+              "createdAt": "2020-07-24T13:26:50Z",
+              "commit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU0OTE3MDk2",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-454917096",
+              "createdAt": "2020-07-24T14:09:06Z",
+              "commit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37"
+              },
+              "state": "DISMISSED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            },
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "cf90ebec8bf639787de5fe9677e435cead7518a5",
+                "author": {
+                  "user": {
+                    "login": "kevinleturc",
+                    "name": "Kevin Leturc"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/cf90ebec8bf639787de5fe9677e435cead7518a5",
+                "committedDate": "2020-08-06T10:19:59Z",
+                "message": "NXP-29389: Don't crash when deserializing a non valid date regarding DST"
+              }
+            },
+            {
+              "__typename": "HeadRefForcePushedEvent",
+              "beforeCommit": {
+                "oid": "12e946244bbc7053ccab6d71c44927d9d64b8e37",
+                "author": {
+                  "user": {
+                    "login": "kevinleturc",
+                    "name": "Kevin Leturc"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/12e946244bbc7053ccab6d71c44927d9d64b8e37",
+                "committedDate": "2020-07-24T13:17:04Z",
+                "message": "NXP-29389: Don't crash when deserializing a non valid date regarding DST"
+              },
+              "afterCommit": {
+                "oid": "cf90ebec8bf639787de5fe9677e435cead7518a5",
+                "author": {
+                  "user": {
+                    "login": "kevinleturc",
+                    "name": "Kevin Leturc"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/cf90ebec8bf639787de5fe9677e435cead7518a5",
+                "committedDate": "2020-08-06T10:19:59Z",
+                "message": "NXP-29389: Don't crash when deserializing a non valid date regarding DST"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDYyNTQ5Mzgy",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-462549382",
+              "createdAt": "2020-08-06T14:02:32Z",
+              "commit": {
+                "oid": "cf90ebec8bf639787de5fe9677e435cead7518a5"
+              },
+              "state": "APPROVED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDYyNzkwMzk2",
+              "url": "https://github.com/nuxeo/nuxeo/pull/4226#pullrequestreview-462790396",
+              "createdAt": "2020-08-06T18:52:54Z",
+              "commit": {
+                "oid": "cf90ebec8bf639787de5fe9677e435cead7518a5"
+              },
+              "state": "APPROVED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 4987,
+      "cost": 1,
+      "resetAt": "2021-11-03T18:41:40Z"
+    }
+  }
+}

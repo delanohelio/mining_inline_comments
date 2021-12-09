@@ -1,0 +1,1 @@
+{"data": {"search": {"issueCount": 0, "pageInfo": {"startCursor": null, "endCursor": null, "hasNextPage": false, "hasPreviousPage": false}, "nodes": []}, "rateLimit": {"limit": 5000, "remaining": 4285, "cost": 1, "resetAt": "2021-10-17T15:14:32Z"}}}

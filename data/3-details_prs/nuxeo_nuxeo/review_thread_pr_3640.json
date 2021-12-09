@@ -1,0 +1,99 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0MzU4NjM4ODkx",
+        "number": 3640,
+        "reviewThreads": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNDoyNDowNVrODVdWuQ==",
+            "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNDoyNDowNVrODVdWuQ==",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "id": "MDIzOlB1bGxSZXF1ZXN0UmV2aWV3VGhyZWFkMjIzODI3NjQxOnYy",
+              "diffSide": "RIGHT",
+              "path": "addons/nuxeo-platform-spreadsheet/nuxeo-platform-spreadsheet-web-ui/src/main/resources/web/nuxeo.war/ui/nuxeo-spreadsheet/nuxeo-spreadsheet-button.html",
+              "isResolved": false,
+              "comments": {
+                "totalCount": 3,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNDoyNDowNVrOFZslyA==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNzo1MDo0MFrOFZxOgQ==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjQ4OTI4OA==",
+                    "bodyText": "Shouldn't we only do this when the #save button on spreadsheet is pressed?",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/3640#discussion_r362489288",
+                    "createdAt": "2020-01-02T14:24:05Z",
+                    "author": {
+                      "login": "Gabez0r"
+                    },
+                    "path": "addons/nuxeo-platform-spreadsheet/nuxeo-platform-spreadsheet-web-ui/src/main/resources/web/nuxeo.war/ui/nuxeo-spreadsheet/nuxeo-spreadsheet-button.html",
+                    "diffHunk": "@@ -135,7 +135,7 @@\n \n       _close: function() {\n         this.$.dialog.toggle();\n-        this.nxProvider.fetch();\n+        this.fire('document-updated');",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+                    },
+                    "originalPosition": 5
+                  },
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjUzMDkwNw==",
+                    "bodyText": "The save button does not close the dialog and I don't have any way to tell whether or not things changed so it's safer to just refresh content on close \ud83e\udd37\u200d\u2642",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/3640#discussion_r362530907",
+                    "createdAt": "2020-01-02T16:14:51Z",
+                    "author": {
+                      "login": "nelsonsilva"
+                    },
+                    "path": "addons/nuxeo-platform-spreadsheet/nuxeo-platform-spreadsheet-web-ui/src/main/resources/web/nuxeo.war/ui/nuxeo-spreadsheet/nuxeo-spreadsheet-button.html",
+                    "diffHunk": "@@ -135,7 +135,7 @@\n \n       _close: function() {\n         this.$.dialog.toggle();\n-        this.nxProvider.fetch();\n+        this.fire('document-updated');",
+                    "state": "SUBMITTED",
+                    "replyTo": {
+                      "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjQ4OTI4OA=="
+                    },
+                    "originalCommit": {
+                      "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+                    },
+                    "originalPosition": 5
+                  },
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjU2NTI0OQ==",
+                    "bodyText": "\ud83d\ude31 \ud83d\udc4d",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/3640#discussion_r362565249",
+                    "createdAt": "2020-01-02T17:50:40Z",
+                    "author": {
+                      "login": "Gabez0r"
+                    },
+                    "path": "addons/nuxeo-platform-spreadsheet/nuxeo-platform-spreadsheet-web-ui/src/main/resources/web/nuxeo.war/ui/nuxeo-spreadsheet/nuxeo-spreadsheet-button.html",
+                    "diffHunk": "@@ -135,7 +135,7 @@\n \n       _close: function() {\n         this.$.dialog.toggle();\n-        this.nxProvider.fetch();\n+        this.fire('document-updated');",
+                    "state": "SUBMITTED",
+                    "replyTo": {
+                      "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjQ4OTI4OA=="
+                    },
+                    "originalCommit": {
+                      "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+                    },
+                    "originalPosition": 5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 4302,
+      "cost": 1,
+      "resetAt": "2021-11-03T18:41:40Z"
+    }
+  }
+}

@@ -1,0 +1,946 @@
+[
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1NzUxMjcy",
+    "number": 854,
+    "merged": true,
+    "createdAt.date": 1579685615000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1NzUxMTky",
+    "number": 853,
+    "merged": true,
+    "createdAt.date": 1579685605000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1NzE0MzYy",
+    "number": 830,
+    "merged": true,
+    "createdAt.date": 1579679728000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1MjY0MTIw",
+    "number": 828,
+    "merged": true,
+    "createdAt.date": 1579607453000,
+    "inlineReviews.totalCount": 7
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1MDk1ODAy",
+    "number": 825,
+    "merged": true,
+    "createdAt.date": 1579582911000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYzODM4ODQ4",
+    "number": 815,
+    "merged": true,
+    "createdAt.date": 1579207755000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYzNjE2OTMw",
+    "number": 812,
+    "merged": true,
+    "createdAt.date": 1579177227000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYzMTE0NDMx",
+    "number": 798,
+    "merged": true,
+    "createdAt.date": 1579091504000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYyNzAzMzk2",
+    "number": 796,
+    "merged": true,
+    "createdAt.date": 1579016592000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYyNTk0NTIx",
+    "number": 795,
+    "merged": true,
+    "createdAt.date": 1579002749000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYxNjAwNzcy",
+    "number": 791,
+    "merged": true,
+    "createdAt.date": 1578686393000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYxNTg2Mjk5",
+    "number": 790,
+    "merged": true,
+    "createdAt.date": 1578683854000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYxNDY4NzAw",
+    "number": 789,
+    "merged": true,
+    "createdAt.date": 1578665628000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzYwOTAyNjQx",
+    "number": 788,
+    "merged": true,
+    "createdAt.date": 1578568077000,
+    "inlineReviews.totalCount": 12
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzU5Mjk4MTA0",
+    "number": 781,
+    "merged": true,
+    "createdAt.date": 1578228210000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA0MzAxNjky",
+    "number": 1063,
+    "merged": true,
+    "createdAt.date": 1587036933000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA0MjE0NDU4",
+    "number": 1062,
+    "merged": true,
+    "createdAt.date": 1587027473000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAzNzIzMTE3",
+    "number": 1059,
+    "merged": true,
+    "createdAt.date": 1586952877000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyNzg5NTY3",
+    "number": 1055,
+    "merged": true,
+    "createdAt.date": 1586804691000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyNzM1NDkz",
+    "number": 1053,
+    "merged": true,
+    "createdAt.date": 1586797081000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyNjQyNzQx",
+    "number": 1051,
+    "merged": true,
+    "createdAt.date": 1586784314000,
+    "inlineReviews.totalCount": 5
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyMzExNjA4",
+    "number": 1037,
+    "merged": true,
+    "createdAt.date": 1586683492000,
+    "inlineReviews.totalCount": 5
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyMjkxNjUx",
+    "number": 1036,
+    "merged": true,
+    "createdAt.date": 1586670524000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAyMDA2Nzc4",
+    "number": 1030,
+    "merged": true,
+    "createdAt.date": 1586541549000,
+    "inlineReviews.totalCount": 21
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAxODE2MzUw",
+    "number": 1028,
+    "merged": true,
+    "createdAt.date": 1586507771000,
+    "inlineReviews.totalCount": 12
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAxNTk0ODU4",
+    "number": 1027,
+    "merged": true,
+    "createdAt.date": 1586459265000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDAxMzk5NzQ3",
+    "number": 1025,
+    "merged": true,
+    "createdAt.date": 1586435913000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzkzMDc1NTQx",
+    "number": 1007,
+    "merged": true,
+    "createdAt.date": 1585064878000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzkwOTI4MTEw",
+    "number": 1001,
+    "merged": true,
+    "createdAt.date": 1584614747000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0Mzg2OTU5NzYy",
+    "number": 993,
+    "merged": true,
+    "createdAt.date": 1583967677000,
+    "inlineReviews.totalCount": 9
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0Mzg2MDI1MzMx",
+    "number": 988,
+    "merged": true,
+    "createdAt.date": 1583832852000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0Mzg0Njg2NDEx",
+    "number": 985,
+    "merged": true,
+    "createdAt.date": 1583481842000,
+    "inlineReviews.totalCount": 7
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0Mzg0MTc0NDM5",
+    "number": 984,
+    "merged": true,
+    "createdAt.date": 1583402194000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzgzOTQxMTUy",
+    "number": 983,
+    "merged": true,
+    "createdAt.date": 1583361603000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0Mzc1NzE2NjU0",
+    "number": 969,
+    "merged": true,
+    "createdAt.date": 1581774160000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzczNzc3NDkz",
+    "number": 965,
+    "merged": true,
+    "createdAt.date": 1581440944000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzcyODYyNzcw",
+    "number": 955,
+    "merged": true,
+    "createdAt.date": 1581275660000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzcyMzcyMzI2",
+    "number": 952,
+    "merged": true,
+    "createdAt.date": 1581075957000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzcxMDUyNTY2",
+    "number": 936,
+    "merged": true,
+    "createdAt.date": 1580850689000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY5MTMwNDQ0",
+    "number": 923,
+    "merged": true,
+    "createdAt.date": 1580397344000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY4NDQzNDgw",
+    "number": 919,
+    "merged": true,
+    "createdAt.date": 1580288605000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY3NTIzNjkw",
+    "number": 912,
+    "merged": true,
+    "createdAt.date": 1580135533000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY2NzM3MDI0",
+    "number": 909,
+    "merged": true,
+    "createdAt.date": 1579856392000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY2NzAxNzc2",
+    "number": 907,
+    "merged": true,
+    "createdAt.date": 1579848431000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY2MjIwNDMy",
+    "number": 901,
+    "merged": true,
+    "createdAt.date": 1579764557000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0MzY1ODg5MTY3",
+    "number": 883,
+    "merged": true,
+    "createdAt.date": 1579703950000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDU3NzM5MDc5",
+    "number": 1310,
+    "merged": true,
+    "createdAt.date": 1595934618000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDU2NzA5NDUz",
+    "number": 1293,
+    "merged": true,
+    "createdAt.date": 1595745357000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDU1ODgxOTI5",
+    "number": 1291,
+    "merged": true,
+    "createdAt.date": 1595528904000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDM3NDYzNTQ4",
+    "number": 1265,
+    "merged": true,
+    "createdAt.date": 1592689136000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDM1OTgzOTU4",
+    "number": 1261,
+    "merged": true,
+    "createdAt.date": 1592413664000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDM0MDIyNDkz",
+    "number": 1255,
+    "merged": true,
+    "createdAt.date": 1592063386000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDMzMjk5ODk2",
+    "number": 1253,
+    "merged": true,
+    "createdAt.date": 1591905175000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDI3OTc4ODIz",
+    "number": 1241,
+    "merged": true,
+    "createdAt.date": 1591291154000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDI3Njg5NjI5",
+    "number": 1237,
+    "merged": true,
+    "createdAt.date": 1591261043000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDI2MjQ3OTQ4",
+    "number": 1232,
+    "merged": true,
+    "createdAt.date": 1591050608000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDIyOTE2OTUx",
+    "number": 1215,
+    "merged": true,
+    "createdAt.date": 1590446928000,
+    "inlineReviews.totalCount": 9
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDIyMzk4NTMz",
+    "number": 1209,
+    "merged": true,
+    "createdAt.date": 1590319190000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDIwNzI2NTMx",
+    "number": 1202,
+    "merged": true,
+    "createdAt.date": 1589978652000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE4OTg4Njk5",
+    "number": 1199,
+    "merged": true,
+    "createdAt.date": 1589645602000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE4OTcwMjI4",
+    "number": 1198,
+    "merged": true,
+    "createdAt.date": 1589636681000,
+    "inlineReviews.totalCount": 11
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE4NTYyOTYz",
+    "number": 1196,
+    "merged": true,
+    "createdAt.date": 1589545628000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE3ODg0MjM4",
+    "number": 1193,
+    "merged": true,
+    "createdAt.date": 1589450072000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE3NzkyOTE4",
+    "number": 1192,
+    "merged": true,
+    "createdAt.date": 1589439728000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE3MzMxNzU0",
+    "number": 1189,
+    "merged": true,
+    "createdAt.date": 1589373226000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE3Mjk4NDMw",
+    "number": 1188,
+    "merged": true,
+    "createdAt.date": 1589369219000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE3MTAxMjcy",
+    "number": 1185,
+    "merged": true,
+    "createdAt.date": 1589342651000,
+    "inlineReviews.totalCount": 5
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE0OTYyOTY5",
+    "number": 1175,
+    "merged": true,
+    "createdAt.date": 1588892768000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE0NTQ4MjM0",
+    "number": 1157,
+    "merged": true,
+    "createdAt.date": 1588841408000,
+    "inlineReviews.totalCount": 9
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDE0MzQ5MzAz",
+    "number": 1155,
+    "merged": true,
+    "createdAt.date": 1588801337000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDEzMDkyODAw",
+    "number": 1152,
+    "merged": true,
+    "createdAt.date": 1588614544000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDEwNzA0OTA2",
+    "number": 1144,
+    "merged": true,
+    "createdAt.date": 1588165983000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDEwNTgyMDQz",
+    "number": 1141,
+    "merged": true,
+    "createdAt.date": 1588150928000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA5OTU2MDc5",
+    "number": 1140,
+    "merged": true,
+    "createdAt.date": 1588061632000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA4OTcyNTgz",
+    "number": 1119,
+    "merged": true,
+    "createdAt.date": 1587849993000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA4OTUyMjcw",
+    "number": 1118,
+    "merged": true,
+    "createdAt.date": 1587840163000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA4MTA2OTgx",
+    "number": 1109,
+    "merged": true,
+    "createdAt.date": 1587666901000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA3MzUxNTE4",
+    "number": 1107,
+    "merged": true,
+    "createdAt.date": 1587567943000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA2ODk5MTYx",
+    "number": 1100,
+    "merged": true,
+    "createdAt.date": 1587501885000,
+    "inlineReviews.totalCount": 5
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA2MjYwMDI5",
+    "number": 1097,
+    "merged": true,
+    "createdAt.date": 1587411387000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA2MjQ3NDYy",
+    "number": 1096,
+    "merged": true,
+    "createdAt.date": 1587409857000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA2MjQzOTQx",
+    "number": 1095,
+    "merged": true,
+    "createdAt.date": 1587409399000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA1MzE3NDk1",
+    "number": 1087,
+    "merged": true,
+    "createdAt.date": 1587153967000,
+    "inlineReviews.totalCount": 15
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA1MTk4MDg1",
+    "number": 1086,
+    "merged": true,
+    "createdAt.date": 1587137199000,
+    "inlineReviews.totalCount": 12
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA1MDU2OTc3",
+    "number": 1085,
+    "merged": true,
+    "createdAt.date": 1587119869000,
+    "inlineReviews.totalCount": 9
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA0NjUzOTYw",
+    "number": 1082,
+    "merged": true,
+    "createdAt.date": 1587065994000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDA0NTgyMzk2",
+    "number": 1080,
+    "merged": true,
+    "createdAt.date": 1587060903000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTQ0NTk5MDI0",
+    "number": 1501,
+    "merged": true,
+    "createdAt.date": 1608705040000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTQxNzA1MDM5",
+    "number": 1494,
+    "merged": true,
+    "createdAt.date": 1608194899000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTM1MjQ0MTc5",
+    "number": 1478,
+    "merged": true,
+    "createdAt.date": 1607526262000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTE3NTgzNzU5",
+    "number": 1436,
+    "merged": true,
+    "createdAt.date": 1604910553000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTE3Mjk2MjE0",
+    "number": 1428,
+    "merged": true,
+    "createdAt.date": 1604837778000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTE3MTAxNTM5",
+    "number": 1424,
+    "merged": true,
+    "createdAt.date": 1604734271000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTE2NjQ2OTYz",
+    "number": 1422,
+    "merged": true,
+    "createdAt.date": 1604657959000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTE1ODQwMDA2",
+    "number": 1420,
+    "merged": true,
+    "createdAt.date": 1604559159000,
+    "inlineReviews.totalCount": 5
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTEzNjc5MjI0",
+    "number": 1416,
+    "merged": true,
+    "createdAt.date": 1604259267000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTEzNjI5ODA2",
+    "number": 1415,
+    "merged": true,
+    "createdAt.date": 1604240158000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTEzNDAwNzk4",
+    "number": 1414,
+    "merged": true,
+    "createdAt.date": 1604135867000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NTEzMTk1NDI4",
+    "number": 1413,
+    "merged": true,
+    "createdAt.date": 1604081280000,
+    "inlineReviews.totalCount": 9
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk5NDY5ODI0",
+    "number": 1397,
+    "merged": true,
+    "createdAt.date": 1602099049000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk4MTg2ODkz",
+    "number": 1394,
+    "merged": true,
+    "createdAt.date": 1601943372000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk3OTk3MDY5",
+    "number": 1393,
+    "merged": true,
+    "createdAt.date": 1601917907000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk3NjYyODMx",
+    "number": 1391,
+    "merged": true,
+    "createdAt.date": 1601884152000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk3NDk5NTQy",
+    "number": 1389,
+    "merged": true,
+    "createdAt.date": 1601845802000,
+    "inlineReviews.totalCount": 8
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk3MTIxMTky",
+    "number": 1387,
+    "merged": true,
+    "createdAt.date": 1601670614000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk2OTExNjc5",
+    "number": 1383,
+    "merged": true,
+    "createdAt.date": 1601645745000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk0OTU1NTU3",
+    "number": 1373,
+    "merged": true,
+    "createdAt.date": 1601396662000,
+    "inlineReviews.totalCount": 6
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDk0MTc5MDkx",
+    "number": 1370,
+    "merged": true,
+    "createdAt.date": 1601302939000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDkzNzM5OTYz",
+    "number": 1369,
+    "merged": true,
+    "createdAt.date": 1601222041000,
+    "inlineReviews.totalCount": 4
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDg2ODI4MTI0",
+    "number": 1360,
+    "merged": true,
+    "createdAt.date": 1600110919000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDgwODY4NzI4",
+    "number": 1349,
+    "merged": true,
+    "createdAt.date": 1599420690000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDc1ODg5ODc3",
+    "number": 1346,
+    "merged": true,
+    "createdAt.date": 1598781584000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDc1ODM0ODI5",
+    "number": 1345,
+    "merged": true,
+    "createdAt.date": 1598739527000,
+    "inlineReviews.totalCount": 3
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDY4NDM0NjQ4",
+    "number": 1333,
+    "merged": true,
+    "createdAt.date": 1597578531000,
+    "inlineReviews.totalCount": 10
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDY4MzU2NDMw",
+    "number": 1332,
+    "merged": true,
+    "createdAt.date": 1597519720000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDY3MzcwNjk0",
+    "number": 1328,
+    "merged": true,
+    "createdAt.date": 1597323743000,
+    "inlineReviews.totalCount": 2
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDYyMDYwOTkx",
+    "number": 1321,
+    "merged": true,
+    "createdAt.date": 1596446898000,
+    "inlineReviews.totalCount": 1
+  },
+  {
+    "repository": "1c-syntax\/bsl-language-server",
+    "id": "MDExOlB1bGxSZXF1ZXN0NDYxNDI5NTUw",
+    "number": 1319,
+    "merged": true,
+    "createdAt.date": 1596316713000,
+    "inlineReviews.totalCount": 2
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0MzU4NjM4ODkx",
+        "number": 3640,
+        "title": "NXP-28117: trigger refresh on spreadsheet close",
+        "bodyText": "",
+        "createdAt": "2020-01-02T12:09:43Z",
+        "url": "https://github.com/nuxeo/nuxeo/pull/3640",
+        "merged": true,
+        "mergeCommit": {
+          "oid": "e136929ade78174e3eb2ecb6393e00fd42071b98"
+        },
+        "closed": true,
+        "closedAt": "2020-01-03T11:40:59Z",
+        "author": {
+          "login": "nelsonsilva"
+        },
+        "timelineItems": {
+          "totalCount": 4,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpPPAAABb2YoeLAH2gAyMzU4NjM4ODkxOjZkMDkxODJhYjZjNmEwMTA0N2M0N2U0NDc4NmE3NmQ5ZDU1ZGFiOWE=",
+            "endCursor": "Y3Vyc29yOnYyOpPPAAABb2dhkQgFqTMzNzc3NTkwMQ==",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "6d09182ab6c6a01047c47e44786a76d9d55dab9a",
+                "author": {
+                  "user": {
+                    "login": "nelsonsilva",
+                    "name": "Nelson Silva"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/6d09182ab6c6a01047c47e44786a76d9d55dab9a",
+                "committedDate": "2020-01-02T12:08:46Z",
+                "message": "NXP-28117: trigger refresh on spreadsheet close"
+              }
+            },
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "1311030c30742d101c7e97835d6c62182416bf73",
+                "author": {
+                  "user": {
+                    "login": "nelsonsilva",
+                    "name": "Nelson Silva"
+                  }
+                },
+                "url": "https://github.com/nuxeo/nuxeo/commit/1311030c30742d101c7e97835d6c62182416bf73",
+                "committedDate": "2020-01-02T12:12:19Z",
+                "message": "NXP-28117: check if jQuery is defined"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM3Njc5MjQ4",
+              "url": "https://github.com/nuxeo/nuxeo/pull/3640#pullrequestreview-337679248",
+              "createdAt": "2020-01-02T14:24:05Z",
+              "commit": {
+                "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+              },
+              "state": "COMMENTED",
+              "comments": {
+                "totalCount": 1,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNDoyNDowNVrOFZslyA==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wMlQxNDoyNDowNVrOFZslyA==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MjQ4OTI4OA==",
+                    "bodyText": "Shouldn't we only do this when the #save button on spreadsheet is pressed?",
+                    "url": "https://github.com/nuxeo/nuxeo/pull/3640#discussion_r362489288",
+                    "createdAt": "2020-01-02T14:24:05Z",
+                    "author": {
+                      "login": "Gabez0r"
+                    },
+                    "path": "addons/nuxeo-platform-spreadsheet/nuxeo-platform-spreadsheet-web-ui/src/main/resources/web/nuxeo.war/ui/nuxeo-spreadsheet/nuxeo-spreadsheet-button.html",
+                    "diffHunk": "@@ -135,7 +135,7 @@\n \n       _close: function() {\n         this.$.dialog.toggle();\n-        this.nxProvider.fetch();\n+        this.fire('document-updated');",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+                    },
+                    "originalPosition": 5
+                  }
+                ]
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM3Nzc1OTAx",
+              "url": "https://github.com/nuxeo/nuxeo/pull/3640#pullrequestreview-337775901",
+              "createdAt": "2020-01-02T17:50:45Z",
+              "commit": {
+                "oid": "1311030c30742d101c7e97835d6c62182416bf73"
+              },
+              "state": "APPROVED",
+              "comments": {
+                "totalCount": 0,
+                "pageInfo": {
+                  "startCursor": null,
+                  "endCursor": null,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": []
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 4868,
+      "cost": 1,
+      "resetAt": "2021-11-03T18:41:40Z"
+    }
+  }
+}

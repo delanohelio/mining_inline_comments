@@ -1,0 +1,93 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0MzU5Mjk4MTA0",
+        "number": 781,
+        "title": "\u0418\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f FN #694",
+        "bodyText": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435\n\n\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0430 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0440\u0435\u0436\u0438\u043c\u0430 \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u043e\u0441\u0442\u0438\n\n\u0434\u043e \u0432\u0435\u0440\u0441\u0438\u0438 8.3.9 \u043c\u0435\u043d\u044c\u0448\u0435 \u043d\u0430 \u043e\u0434\u0438\u043d \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440 \u0443 FTPConnection\n\u0434\u043e \u0432\u0435\u0440\u0441\u0438\u0438 8.3.7 \u0443 \u043e\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0445\n\u0443 \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u041f\u043e\u0447\u0442\u043e\u0432\u044b\u0439\u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b \u043e\u0442 \u0432\u0435\u0440\u0441\u0438\u0438 \u043d\u0435 \u0437\u0430\u0432\u0438\u0441\u044f\u0442\n\n\u0421\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438\n\n\n\n\n\n\nCloses: #694\n\u0427\u0435\u043a\u043b\u0438\u0441\u0442\n\n\n\u041e\u0431\u0449\u0438\u0435\n\n \u0412\u0435\u0442\u043a\u0430 PR \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0430 \u0438\u0437 develop\n \u041e\u0442\u043b\u0430\u0434\u043e\u0447\u043d\u044b\u0435, \u0437\u0430\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0438 \u043f\u0440\u043e\u0447\u0438\u0435, \u043d\u0435 \u0438\u043c\u0435\u044e\u0449\u0438\u0435 \u0441\u043c\u044b\u0441\u043b\u0430 \u0443\u0447\u0430\u0441\u0442\u043a\u0438 \u043a\u043e\u0434\u0430 \u0443\u0434\u0430\u043b\u0435\u043d\u044b\n \u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u043f\u043e\u043a\u0440\u044b\u0442\u044b \u0442\u0435\u0441\u0442\u0430\u043c\u0438\n \u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u043f\u0435\u0440\u0435\u0434 \u043a\u043e\u043c\u043c\u0438\u0442\u043e\u043c \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u044b (\u0437\u0430\u043f\u0443\u0441\u043a\u0430\u043b \u043a\u043e\u043c\u0430\u043d\u0434\u0443 gradlew precommit)\n\n\u0414\u043b\u044f \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\n\n \u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0438 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u043e \u0434\u043b\u044f \u043e\u0431\u043e\u0438\u0445 \u044f\u0437\u044b\u043a\u043e\u0432 (\u043f\u0435\u0440\u0435\u0432\u043e\u0434 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u043d\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u0435\u043d)\n\n\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e",
+        "createdAt": "2020-01-05T12:43:30Z",
+        "url": "https://github.com/1c-syntax/bsl-language-server/pull/781",
+        "merged": true,
+        "mergeCommit": {
+          "oid": "51e558091eab21506d7fd8e5370b616a4e00d487"
+        },
+        "closed": true,
+        "closedAt": "2020-01-05T13:21:51Z",
+        "author": {
+          "login": "theshadowco"
+        },
+        "timelineItems": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpPPAAABb3W6MHAH2gAyMzU5Mjk4MTA0OmRlZmI2ODhiMjYxYzZlN2RkMDMwNzJkZjU3YWNhOGI3MDRmOTM2NmY=",
+            "endCursor": "Y3Vyc29yOnYyOpPPAAABb3XeUnAFqTMzODQwMDE3Nw==",
+            "hasNextPage": false,
+            "hasPreviousPage": false
+          },
+          "nodes": [
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "defb688b261c6e7dd03072df57aca8b704f9366f",
+                "author": {
+                  "user": {
+                    "login": "theshadowco",
+                    "name": "Maximov Valery"
+                  }
+                },
+                "url": "https://github.com/1c-syntax/bsl-language-server/commit/defb688b261c6e7dd03072df57aca8b704f9366f",
+                "committedDate": "2020-01-05T12:42:14Z",
+                "message": "fix #694\n\n\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0430 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0440\u0435\u0436\u0438\u043c\u0430 \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u043e\u0441\u0442\u0438\n- \u0434\u043e \u0432\u0435\u0440\u0441\u0438\u0438 8.3.9 \u043c\u0435\u043d\u044c\u0448\u0435 \u043d\u0430 \u043e\u0434\u0438\u043d \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440 \u0443 FTPConnection\n- \u0434\u043e \u0432\u0435\u0440\u0441\u0438\u0438 8.3.7 \u0443 \u043e\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0445\n- \u0443 \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u041f\u043e\u0447\u0442\u043e\u0432\u044b\u0439\u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b \u043e\u0442 \u0432\u0435\u0440\u0441\u0438\u0438 \u043d\u0435 \u0437\u0430\u0432\u0438\u0441\u044f\u0442"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM4NDAwMTc3",
+              "url": "https://github.com/1c-syntax/bsl-language-server/pull/781#pullrequestreview-338400177",
+              "createdAt": "2020-01-05T13:21:41Z",
+              "commit": {
+                "oid": "defb688b261c6e7dd03072df57aca8b704f9366f"
+              },
+              "state": "COMMENTED",
+              "comments": {
+                "totalCount": 1,
+                "pageInfo": {
+                  "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wNVQxMzoyMTo0MlrOFaRbdQ==",
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wMS0wNVQxMzoyMTo0MlrOFaRbdQ==",
+                  "hasNextPage": false,
+                  "hasPreviousPage": false
+                },
+                "nodes": [
+                  {
+                    "id": "MDI0OlB1bGxSZXF1ZXN0UmV2aWV3Q29tbWVudDM2MzA5Mjg1Mw==",
+                    "bodyText": "\u041a\u0430\u043a\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0439 \u0433\u0435\u0442\u0442\u0435\u0440... \u041d\u0430\u0434\u043e \u0431\u0443\u0434\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u043d\u0430 \u043b\u043e\u0433\u0438\u0447\u043d\u043e\u0441\u0442\u044c",
+                    "url": "https://github.com/1c-syntax/bsl-language-server/pull/781#discussion_r363092853",
+                    "createdAt": "2020-01-05T13:21:42Z",
+                    "author": {
+                      "login": "nixel2007"
+                    },
+                    "path": "src/main/java/com/github/_1c_syntax/bsl/languageserver/diagnostics/TimeoutsInExternalResourcesDiagnostic.java",
+                    "diffHunk": "@@ -158,6 +167,30 @@ public ParseTree visitCodeBlock(BSLParser.CodeBlockContext ctx) {\n     return ctx;\n   }\n \n+  @Override\n+  public ParseTree visitFile(BSLParser.FileContext ctx) {\n+    CompatibilityMode diagnosticCompatibility = documentContext\n+      .getServerContext()\n+      .getConfiguration()\n+      .getCompatibilityMode();\n+\n+    if (diagnosticCompatibility != null\n+      && CompatibilityMode.compareTo(diagnosticCompatibility, DiagnosticCompatibilityMode.UNDEFINED.getCompatibilityMode()) != 0) {",
+                    "state": "SUBMITTED",
+                    "replyTo": null,
+                    "originalCommit": {
+                      "oid": "defb688b261c6e7dd03072df57aca8b704f9366f"
+                    },
+                    "originalPosition": 72
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rateLimit": {
+      "limit": 5000,
+      "remaining": 4952,
+      "cost": 1,
+      "resetAt": "2021-10-29T17:30:11Z"
+    }
+  }
+}
