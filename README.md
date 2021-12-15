@@ -24,7 +24,7 @@ You can use pip to install the requirements.
 
 ### Configuration
 #### GitHub Token
-Use the file config.json to input your GitHub token. It is possible to includes more tha one.
+Use the file config.json to input your GitHub token. It is possible to includes more than one.
 ```
  { 
    "github":{
