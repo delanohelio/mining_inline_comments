@@ -125,7 +125,7 @@ Input path: [data/2-prs_filtered](data/2-prs_filtered)
 One of output files: [apache_beam/review_thread_pr_10489.json](data/3-details_prs/apache_beam/review_thread_pr_10489.json)
 
 ```
-python run_miner.py details-prs -r repos -i data/2-prs_filtered  -o data/3-details_prs -t 5
+python run_miner.py review-threads-prs -r repos -i data/2-prs_filtered  -o data/3-details_prs -t 5
 ```
 ---
 #### process-prs
@@ -169,7 +169,7 @@ python run_miner.py filter-inline -r repos -i data/4-processed-prs  -o data/5-pr
 python run_miner.py info-repo -i SEART_results.json  -o data/1-prs_by_repo -t 5
 python run_miner.py filter-prs -r repos -i data/1-prs_by_repo  -o data/2-prs_filtered --start_date 2020-01-01 --end_date 2020-12-31 --merged True -t 5
 python run_miner.py details-prs -r repos -i data/2-prs_filtered  -o data/3-details_prs -t 5
-python run_miner.py details-prs -r repos -i data/2-prs_filtered  -o data/3-details_prs -t 5
+python run_miner.py review-threads-prs -r repos -i data/2-prs_filtered  -o data/3-details_prs -t 5
 python run_miner.py process-prs -r repos -i data/3-details-prs  -o data/4-processed_prs -t 5
 python run_miner.py filter-inline -r repos -i data/4-processed-prs  -o data/5-prs_adter_inline_comments_filtered -t 5
 ```
